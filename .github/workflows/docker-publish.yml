@@ -16,8 +16,8 @@ jobs:
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
-          username: altrxz       
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: altrxz        
+          password: ${{ secrets.GHCR_PAT }}
 
       - name: Build Docker image
         run: |
